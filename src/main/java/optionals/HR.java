@@ -51,7 +51,7 @@ public class HR {
     }
 
     // Check the Optional content before extracting values
-    @SuppressWarnings("methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
+    @SuppressWarnings("optional:methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
     public List<Employee> findEmployeesByIds1(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
@@ -62,7 +62,7 @@ public class HR {
     }
 
     // Use a flatmap instead
-    @SuppressWarnings("optional.parameter") // optional-parameter : use of optional as a parameter
+    @SuppressWarnings("optional:optional.parameter") // optional-parameter : use of optional as a parameter
     public List<Employee> findEmployeesByIds2(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
