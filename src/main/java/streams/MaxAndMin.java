@@ -42,6 +42,7 @@ public class MaxAndMin {
                 .collect(Collectors.groupingBy(Employee::getDepartment,
                         Collectors.maxBy(Comparator.comparingInt(Employee::getSalary))));
 
+        @SuppressWarnings("optional.parameter") // optional-parameter : use of optional as a parameter
         map.forEach((house, emp) ->
                 System.out.println(house + ": " + emp.orElse(defaultEmployee)));
     }
