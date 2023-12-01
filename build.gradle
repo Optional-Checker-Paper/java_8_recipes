@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.versions)
     alias(libs.plugins.version.catalog.update)
     alias(libs.plugins.jmh.gradle)
+    id "com.github.spotbugs" version "5.2.5"
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -33,4 +34,10 @@ dependencies {
     jmh libs.bundles.jmh
 }
 
-
+spotbugs {
+     ignoreFailures = true
+     toolVersion = '4.8.2'
+     effort = 'default'
+     reportLevel = 'default'
+     reportsDir = file("$buildDir/spotbugs")
+ }
