@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id "net.ltgt.errorprone" version "3.1.0"
     alias(libs.plugins.versions)
     alias(libs.plugins.version.catalog.update)
     alias(libs.plugins.jmh.gradle)
@@ -31,6 +32,19 @@ dependencies {
 
     // JMH
     jmh libs.bundles.jmh
+
+    // Error Prone
+    errorprone("com.google.errorprone:error_prone_core:2.23.0")
 }
+
+tasks.withType(JavaCompile).configureEach {
+   options.errorprone.disableWarningsInGeneratedCode = true
+   options.errorprone.disableAllChecks = true
+   options.errorprone.enable("NullOptional", "NullableOptional",
+     "OptionalMapToOptional", "OptionalNotPresent", "OptionalEquality",
+     "OptionalMapUnusedValue", "OptionalOfRedundantMethod", "UnnecessaryOptionalGet",
+   )
+ }
+
 
 
