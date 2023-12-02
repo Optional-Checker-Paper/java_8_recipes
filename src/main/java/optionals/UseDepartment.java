@@ -3,6 +3,8 @@ package optionals;
 import java.util.Optional;
 
 public class UseDepartment {
+
+    @SuppressWarnings("OptionalMapToOptional") // error-prone-nested-optional
     public static void main(String[] args) {
         Manager mrSlate = new Manager("Mr. Slate");
 
