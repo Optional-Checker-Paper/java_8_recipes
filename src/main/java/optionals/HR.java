@@ -61,6 +61,7 @@ public class HR {
     }
 
     // Use a flatmap instead
+    @SuppressWarnings("SimplifyOptionalCallChains") // intellij-suppression-simplify-optional-call-chains
     public List<Employee> findEmployeesByIds2(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
