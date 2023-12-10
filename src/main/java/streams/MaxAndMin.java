@@ -5,6 +5,7 @@ import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class MaxAndMin {
+    @SuppressWarnings("optional:optional.parameter") // optional-parameter: in lambda
     public static void main(String[] args) {
         List<Employee> employees = Arrays.asList(
                 new Employee("Cersei",     250_000, "Lannister"),
@@ -42,7 +43,6 @@ public class MaxAndMin {
                 .collect(Collectors.groupingBy(Employee::getDepartment,
                         Collectors.maxBy(Comparator.comparingInt(Employee::getSalary))));
 
-        @SuppressWarnings("optional:optional.parameter") // optional-parameter
         map.forEach((house, emp) ->
                 System.out.println(house + ": " + emp.orElse(defaultEmployee)));
     }
