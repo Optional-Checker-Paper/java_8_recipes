@@ -51,7 +51,7 @@ public class HR {
     }
 
     // Check the Optional content before extracting values
-    @SuppressWarnings("optional:methodref.receiver") // checker-issue : stream type refinement (https://github.com/typetools/checker-framework/issues/1345)
+    @SuppressWarnings("optional:methodref.receiver") // stream type refinement : https://github.com/typetools/checker-framework/issues/1345
     public List<Employee> findEmployeesByIds1(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
