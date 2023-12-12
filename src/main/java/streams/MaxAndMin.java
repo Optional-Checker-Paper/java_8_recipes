@@ -5,7 +5,7 @@ import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
 public class MaxAndMin {
-    @SuppressWarnings("optional:optional.parameter") // optional-parameter: in lambda
+    @SuppressWarnings("optional:optional.parameter") // style-optional-parameter: in lambda
     public static void main(String[] args) {
         List<Employee> employees = Arrays.asList(
                 new Employee("Cersei",     250_000, "Lannister"),

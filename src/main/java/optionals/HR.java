@@ -62,7 +62,7 @@ public class HR {
     }
 
     // Use a flatmap instead
-    @SuppressWarnings("optional:optional.parameter") // optional-parameter
+    @SuppressWarnings("optional:optional.parameter") // style-optional-parameter
     public List<Employee> findEmployeesByIds2(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
