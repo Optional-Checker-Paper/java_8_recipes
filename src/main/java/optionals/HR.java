@@ -51,7 +51,6 @@ public class HR {
     }
 
     // Check the Optional content before extracting values
-    @SuppressWarnings("optional:methodref.receiver") // Stream.filter(isPresent).map(get)
     public List<Employee> findEmployeesByIds1(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
@@ -62,7 +61,6 @@ public class HR {
     }
 
     // Use a flatmap instead
-    @SuppressWarnings("optional:optional.parameter") // style-optional-parameter
     public List<Employee> findEmployeesByIds2(List<Integer> ids) {
         return ids.stream()
                 .map(this::findEmployeeById)
