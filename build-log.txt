@@ -1,0 +1,443 @@
+> Task :createCheckerFrameworkManifest
+
+> Task :compileJava
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:126: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                }).orElse(Employee.DEFAULT_EMPLOYEE);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:126: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                }).orElse(Employee.DEFAULT_EMPLOYEE);
+                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:133: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                }).orElse(Employee.DEFAULT_EMPLOYEE);
+                         ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:133: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                }).orElse(Employee.DEFAULT_EMPLOYEE);
+                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .max(comparingInt(Employee::getId)).orElse(Employee.DEFAULT_EMPLOYEE);
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .max(comparingInt(Employee::getId)).orElse(Employee.DEFAULT_EMPLOYEE);
+                                                   ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .max(comparing(Object::toString)).orElse(Employee.DEFAULT_EMPLOYEE);
+                                                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/generics/Demo.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .max(comparing(Object::toString)).orElse(Employee.DEFAULT_EMPLOYEE);
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/fileio/ProcessDictionary.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                    .orElse("").length();
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/fileio/ProcessDictionary.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                    .orElse("").length();
+                    ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/StreamsDemo.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                     .reduce(Double::sum).orElse(0.0);
+                                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/StreamsDemo.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                     .reduce(Double::sum).orElse(0.0);
+                                         ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/StreamsDemo.java:59: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                     }).orElse(0.0);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/StreamsDemo.java:59: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                     }).orElse(0.0);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Integer> firstEven = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:21: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:23: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(firstEven);
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Integer> firstEvenGT10 = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:31: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(firstEvenGT10);
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        firstEven = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:37: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(firstEven);
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:46: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Integer> any = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findAny();
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:53: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        any = Stream.of(3, 1, 4, 1, 5, 9, 2, 6, 5)
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findAny();
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:62: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<String> firstString = words.stream()
+                         ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:64: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:69: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        firstString = words.stream()
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:70: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:71: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(firstString);
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:73: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        firstString = Stream.of("this", "is", "a", "stream", "of", "strings")
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:75: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/FindFirstAny.java:76: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(firstString);
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:31: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Map<Integer, Optional<String>> minBy = strings.stream()
+                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .collect(groupingBy(String::length,
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        printMap(minBy);
+                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Map<Integer, Optional<String>> maxBy = strings.stream()
+                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:37: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .collect(groupingBy(String::length,
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/GroupingDemo.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        printMap(maxBy);
+                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Employee> optionalEmp = employees.stream()
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:23: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .reduce(BinaryOperator.maxBy(Comparator.comparingInt(Employee::getSalary)));
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        optionalEmp = employees.stream()
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:27: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .max(Comparator.comparingInt(Employee::getSalary));
+                    ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:37: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        optionalEmp = employees.stream()
+        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .collect(Collectors.maxBy(Comparator.comparingInt(Employee::getSalary)));
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println("Emp with max salary: " + optionalEmp.orElse(defaultEmployee));
+                                                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Map<String, Optional<Employee>> map = employees.stream()
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:42: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:45: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        map.forEach((house, emp) ->
+                            ^
+warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:46: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                System.out.println(house + ": " + emp.orElse(defaultEmployee)));
+                                                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/streams/MaxAndMin.java:46: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                System.out.println(house + ": " + emp.orElse(defaultEmployee)));
+                                                     ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalMap.java:18: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<V> get(K key) {
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalMap.java:18: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<V> get(K key) {
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalMap.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(map.get(key));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalMap.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(map.get(key));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalMap.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(map.get(key));
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Department.java:9: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Manager> getBoss() {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Department.java:9: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Manager> getBoss() {
+                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Department.java:10: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(boss);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Department.java:10: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(boss);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Department.java:10: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(boss);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Employee> findEmployeeById(int id) {
+                              ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Employee> findEmployeeById(int id) {
+                              ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(employeeMap.get(id));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(employeeMap.get(id));
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:50: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(employeeMap.get(id));
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .flatMap(optional -> optional.map(Stream::of).orElseGet(Stream::empty))
+                         ^
+warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+                .flatMap(optional -> optional.map(Stream::of).orElseGet(Stream::empty))
+                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+                .flatMap(optional -> optional.map(Stream::of).orElseGet(Stream::empty))
+                                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .flatMap(optional -> optional.map(Stream::of).orElseGet(Stream::empty))
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/HR.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .flatMap(optional -> optional.map(Stream::of).orElseGet(Stream::empty))
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Company.java:8: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Department> getDepartment() {
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Company.java:8: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<Department> getDepartment() {
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Company.java:9: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(department);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Company.java:9: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(department);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/Company.java:9: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(department);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<String> findFirst(Predicate<String> predicate) {
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:19: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public Optional<String> findFirst(Predicate<String> predicate) {
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:22: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:25: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static <T> Optional<T> createOptionalTheHardWay(T value) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:25: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static <T> Optional<T> createOptionalTheHardWay(T value) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return value == null ? Optional.empty() : Optional.of(value);
+                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:26: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        return value == null ? Optional.empty() : Optional.of(value);
+                                                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static <T> Optional<T> createOptionalTheEasyWay(T value) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:29: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    public static <T> Optional<T> createOptionalTheEasyWay(T value) {
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:30: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        return Optional.ofNullable(value);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:30: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(value);
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:30: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        return Optional.ofNullable(value);
+                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .findFirst().orElse("No string satisfying predicate found");
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/OptionalDemo.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                .findFirst().orElse("No string satisfying predicate found");
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                d.getBoss().orElse(new Manager("Unknown")).getName());
+                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:24: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                d.getBoss().orElse(new Manager("Unknown")).getName());
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:28: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                d.getBoss().map(Manager::getName)); // function<Manager,String>
+                               ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:28: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                d.getBoss().map(Manager::getName)); // function<Manager,String>
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                d1.getBoss().orElse(new Manager("Unknown")).getName());
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                d1.getBoss().orElse(new Manager("Unknown")).getName());
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        System.out.println("Name: " + d.getBoss().map(Manager::getName));
+                                                     ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        System.out.println("Name: " + d.getBoss().map(Manager::getName));
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        System.out.println("Name: " + d1.getBoss().map(Manager::getName));
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        System.out.println("Name: " + d1.getBoss().map(Manager::getName));
+                                                  ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .map(Department::getBoss)); // function <Department,Optional<Manager>>
+                    ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:49: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                .map(Department::getBoss)); // function <Department,Optional<Manager>>
+                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:55: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                        .map(Manager::getName));
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:55: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        .map(Manager::getName));
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:55: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        .map(Manager::getName));
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:54: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Department::getBoss)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:54: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Department::getBoss)
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Company> company = Optional.of(co);
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<Company> company = Optional.of(co);
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        Optional<Company> company = Optional.of(co);
+                                               ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        Optional<Company> company = Optional.of(co);
+                                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:63: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        .map(Manager::getName).orElse("No Manager Name")
+                                                     ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:63: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+                        .map(Manager::getName).orElse("No Manager Name")
+                                              ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:63: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        .map(Manager::getName).orElse("No Manager Name")
+                            ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:63: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+                        .map(Manager::getName).orElse("No Manager Name")
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:62: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Department::getBoss)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:62: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Department::getBoss)
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Company::getDepartment)
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseDepartment.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>flatMap(java.util.function.Function<? super T,? extends java.util.Optional<? extends U>>) [METHOD]
+                        .flatMap(Company::getDepartment)
+                        ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseOptionalMap.java:12: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(uo.get("d"));             // Optional.empty
+                                 ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseOptionalMap.java:13: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(uo.get("d").orElse(999)); // 999
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/optionals/UseOptionalMap.java:13: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(uo.get("d").orElse(999)); // 999
+                                      ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        Optional<String> first = names.stream()
+                         ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:36: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+                .findFirst();
+                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+        System.out.println(first);                      // prints Optional.empty
+                           ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(first.orElse("None")); // prints None
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:39: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(first.orElse("None")); // prints None
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(first.orElse(String.format("No result found in %s",
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:41: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        System.out.println(first.orElse(String.format("No result found in %s",
+                                ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:44: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+        System.out.println(first.orElseGet(() ->
+                                          ^
+/tmp/experiments/optional-paper-counts-repos/java_8_recipes/src/main/java/functionpackage/ImplementSupplier.java:44: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+        System.out.println(first.orElseGet(() ->
+                                ^
+145 warnings
+
+> Task :processResources
+> Task :classes
+> Task :jar
+> Task :assemble
+
+BUILD SUCCESSFUL in 8s
+4 actionable tasks: 4 executed
