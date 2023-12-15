@@ -439,5 +439,5 @@ warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLAS
 > Task :jar
 > Task :assemble
 
-BUILD SUCCESSFUL in 8s
+BUILD SUCCESSFUL in 7s
 4 actionable tasks: 4 executed
